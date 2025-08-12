@@ -12,14 +12,14 @@
 
 .page {
   min-inline-size: 320px;
+  inline-size:100%;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: 'wght' 410;
   background-image: var(--background);
   background-size: cover;
   background-attachment: fixed;
-  display: grid;
-  align-items: center;
+  display: grid;/* извините я не могу вызвать эту ошибку со скроллом поэтому не знаю как её исправить */
   justify-content: center;
 }
 .header{
