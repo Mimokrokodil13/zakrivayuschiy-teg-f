@@ -18,6 +18,9 @@
   background-image: var(--background);
   background-size: cover;
   background-attachment: fixed;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .header{
   font-family: 'Press Start 2P',sans-serif;
@@ -247,6 +250,7 @@ dialog::backdrop {
 } 
 dialog[open] {
   display: grid;
+  justify-content: center;
   grid-template-columns: 39px 234px;
   gap: 30px 20px;
   width: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
