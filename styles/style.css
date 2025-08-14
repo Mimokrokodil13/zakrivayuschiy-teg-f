@@ -18,9 +18,8 @@
   background-image: var(--background);
   background-size: cover;
   background-attachment: fixed;
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .header{
   font-family: 'Press Start 2P',sans-serif;
@@ -32,6 +31,7 @@
   padding: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem) clamp(1rem, -1.3438rem + 10vw, 7.65625rem);
   border: 2px solid #000000;
   background-color: #FFFFFF;
+  align-self: center;
 }
 .header h1{
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -67,10 +67,14 @@
 .multiple {
   filter: contrast(50%) hue-rotate(35deg);
 }
+.main-content{
+  align-self: center;
+}
 .main-content__container{
   position: relative;
   width: var(--main-width);
-  margin: 0 clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem) 50px;
+  /* margin: 0 clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem) 50px; */
+  margin-bottom: 50px;
   border: 2px solid #000000;
   background-color: #FFFFFF;
   display: grid;
@@ -250,6 +254,7 @@ dialog::backdrop {
 } 
 dialog[open] {
   display: grid;
+  align-items: center;
   justify-content: center;
   grid-template-columns: 39px 234px;
   gap: 30px 20px;
@@ -276,7 +281,10 @@ dialog button{
 }
 .button-save{
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
-  margin: 0 clamp(2.15625rem, -9.2434rem + 48.6385vw, 34.53125rem) 100px;
+  margin-left: clamp(2.15625rem, -1.1008rem + 13.8967vw, 11.40625rem);
+  /* margin: 0 clamp(2.15625rem, -9.2434rem + 48.6385vw, 34.53125rem) 100px; */
+  margin-bottom: 100px;
+  align-self: end;
   display: grid;
   grid-template-columns: 21px 266px;
   gap: 8px;
